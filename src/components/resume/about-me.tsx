@@ -6,9 +6,9 @@ const AboutMe = () => {
                 <p>
                     Currently in apprenticeship in CESI engineers school,
                     I&apos;m working in FactorFX as an IT engineer. I&apos;m
-                    passionate by the development and interested by the networks
-                    as well. Otherwise, I&apos;m also very motivated to learn
-                    new technologies.
+                    passionate about the development and interested in the
+                    networks as well. Otherwise, I&apos;m also very motivated to
+                    learn new technologies.
                 </p>
             </div>
         </>

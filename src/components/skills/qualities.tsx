@@ -24,7 +24,7 @@ const Qualities = () => {
                         <FaStar />
                     </div>
                     <div className="flex gap-5 items-center justify-between">
-                        <p>Pationate</p>
+                        <p>Passionate</p>
                         <FaHeart />
                     </div>
                     <div className="flex gap-5 items-center justify-between">
