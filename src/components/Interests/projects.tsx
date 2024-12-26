@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { FaFaceSmileWink, FaLink } from "react-icons/fa6";
+import { FaArrowLeft, FaArrowRight, FaFaceSmileWink } from "react-icons/fa6";
 
 const Projects = () => {
     return (
@@ -18,9 +18,12 @@ const Projects = () => {
                                 href="https://aticommunity.fr"
                                 target="_blank"
                             >
-                                https://aticommunity.fr
+                                <div className="flex items-center justify-center gap-2">
+                                    <FaArrowRight />
+                                    <p>aticommunity.fr</p>
+                                    <FaArrowLeft />
+                                </div>
                             </Link>
-                            <FaLink />
                         </div>
                     </div>
                 </div>
