@@ -3,6 +3,7 @@
 
 APPLY_FIXES: all
 
-DISABLE:
-  - COPYPASTE
-  - SPELL
+ENABLE:
+    - TYPESCRIPT
+    - TSX
+    - CSS
