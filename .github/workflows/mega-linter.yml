@@ -70,3 +70,9 @@ jobs:
                   commit_message: "[MegaLinter] Apply linters fixes"
                   commit_user_name: megalinter-bot
                   commit_user_email: nicolas.vuillamy@ox.security
+              env:
+                  GITHUB_TOKEN: ${{ secrets.PAT }}
+            - name: Set Remote URL
+              run: git remote set-url origin https://x-access-token:${{ secrets.PAT }}@github.com/AtiCommunity/website_cv.git
+              env:
+                  PAT: ${{ secrets.PAT }}
