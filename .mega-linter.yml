@@ -4,11 +4,12 @@
 APPLY_FIXES: all
 
 ENABLE:
+    - CSS
+    - JAVASCRIPT
+    - JSON
+    - JSX
+    - MARKDOWN
+    - REPOSITORY
     - TYPESCRIPT
     - TSX
-    - CSS
-
-ENABLE_LINTERS:
-    - TYPESCRIPT_ES
-    - TSX_ESLINT
-    - CSS_STYLELINT
+    - YAML
