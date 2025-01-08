@@ -26,7 +26,6 @@ jobs:
         permissions:
             # Give the default GITHUB_TOKEN write permission to commit and push, comment issues & post new PR
             # Remove the ones you do not need
-            actions: write
             contents: write
             issues: write
             pull-requests: write
