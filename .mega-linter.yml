@@ -3,5 +3,4 @@
 
 APPLY_FIXES: all
 
-DISABLE: all
 DISABLE_LINTERS: all
