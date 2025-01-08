@@ -7,3 +7,7 @@ ENABLE:
     - TYPESCRIPT
     - TSX
     - CSS
+
+ENABLE_LINTERS:
+    - TYPESCRIPT_ES
+    - TSX_ESLINT
