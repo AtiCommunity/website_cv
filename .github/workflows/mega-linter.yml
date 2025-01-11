@@ -1,4 +1,4 @@
-name: Lint and Fix with Mega-Linter
+name: MegaLinter
 
 on:
     push:
@@ -7,7 +7,7 @@ on:
             - main
 
 jobs:
-    mega-linter:
+    megalinter:
         runs-on: ubuntu-latest
 
         steps:
