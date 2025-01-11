@@ -1,3 +1,6 @@
+LINTER_EXCLUDED_PATHS:
+    - ".github/workflows/"
+
 ENABLE:
     - CSS
     - JAVASCRIPT
