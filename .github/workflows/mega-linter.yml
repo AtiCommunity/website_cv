@@ -24,3 +24,11 @@ jobs:
                   APPLY_FIXES: all
                   APPLY_FIXES_EVENT: all
                   APPLY_FIXES_MODE: commit
+
+            - name: Commit and push fixes
+              run: |
+                  git config user.name "GitHub Action"
+                  git config user.email "action@github.com"
+                  git add .
+                  git commit -m "[MegaLinter] Apply linters fixes" || echo "No changes to commit"
+                  git push origin HEAD
