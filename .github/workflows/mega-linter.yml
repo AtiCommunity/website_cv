@@ -1,11 +1,5 @@
 name: MegaLinter
 
-env:
-    GITHUB_TOKEN: ${{ secrets.PAT }}
-    APPLY_FIXES: all
-    APPLY_FIXES_EVENT: commit
-    APPLY_FIXES_MODE: commit
-
 on:
     push:
 
@@ -20,18 +14,12 @@ jobs:
         steps:
             - name: Checkout code
               uses: actions/checkout@v4
-              with:
-                  token: ${{ env.GITHUB_TOKEN }}
 
             - name: Run Mega-Linter
               id: megalinter
               uses: oxsecurity/megalinter@v8
-
-            - name: Commit and push applied linter fixes
-              if: steps.megalinter.outputs.has_updated_sources == 1
-              uses: stefanzweifel/git-auto-commit-action@v4
-              with:
-                  branch: ${{ github.head_ref || github.ref }}
-                  commit_message: "[MegaLinter] Apply linters fixes"
-                  commit_user_name: megalinter-bot
-                  commit_user_email: nicolas.vuillamy@ox.security
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                  APPLY_FIXES: all
+                  APPLY_FIXES_EVENT: commit
+                  APPLY_FIXES_MODE: commit
