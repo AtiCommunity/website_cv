@@ -1,5 +1,11 @@
 name: MegaLinter
 
+env:
+    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    APPLY_FIXES: all
+    APPLY_FIXES_EVENT: commit
+    APPLY_FIXES_MODE: commit
+
 on:
     push:
 
@@ -16,17 +22,14 @@ jobs:
               uses: actions/checkout@v4
 
             - name: Run Mega-Linter
+              id: megalinter
               uses: oxsecurity/megalinter@v8
-              env:
-                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-                  APPLY_FIXES: all
-                  APPLY_FIXES_EVENT: all
-                  APPLY_FIXES_MODE: commit
 
-            - name: Commit and push fixes
-              run: |
-                  git config user.name "GitHub Action"
-                  git config user.email "action@github.com"
-                  git add .
-                  git commit -m "[MegaLinter] Apply linters fixes [skip ci]" || echo "No changes to commit"
-                  git push origin HEAD:${{ github.head_ref || github.ref_name }}
+            - name: Commit and push applied linter fixes
+              if: steps.megalinter.outputs.has_updated_sources == 1
+              uses: stefanzweifel/git-auto-commit-action@v4
+              with:
+                  branch: ${{ github.head_ref || github.ref }}
+                  commit_message: "[MegaLinter] Apply linters fixes"
+                  commit_user_name: megalinter-bot
+                  commit_user_email: nicolas.vuillamy@ox.security
