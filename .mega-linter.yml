@@ -1,4 +1,4 @@
-LINTER_EXCLUDED_PATHS:
+IGNORED_PATHS:
     - ".github/workflows/"
 
 ENABLE:
