@@ -1,6 +1,3 @@
-IGNORED_PATHS:
-    - ".github/workflows/"
-
 ENABLE:
     - CSS
     - JAVASCRIPT
