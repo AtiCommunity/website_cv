@@ -1,7 +1,7 @@
 name: MegaLinter
 
 env:
-    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    GITHUB_TOKEN: ${{ secrets.PAT }}
     APPLY_FIXES: all
     APPLY_FIXES_EVENT: commit
     APPLY_FIXES_MODE: commit
