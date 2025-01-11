@@ -20,6 +20,8 @@ jobs:
         steps:
             - name: Checkout code
               uses: actions/checkout@v4
+              with:
+                  token: ${{ env.GITHUB_TOKEN }}
 
             - name: Run Mega-Linter
               id: megalinter
