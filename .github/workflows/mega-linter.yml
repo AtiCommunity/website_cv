@@ -23,3 +23,12 @@ jobs:
                   APPLY_FIXES: all
                   APPLY_FIXES_EVENT: commit
                   APPLY_FIXES_MODE: commit
+
+            - name: Import GPG key
+              uses: crazy-max/ghaction-import-gpg@v6
+              with:
+                  gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
+                  passphrase: ${{ secrets.PASSPHRASE }}
+
+            - name: List keys
+              run: gpg -K
