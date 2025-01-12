@@ -23,23 +23,3 @@ jobs:
                   APPLY_FIXES: all
                   APPLY_FIXES_EVENT: commit
                   APPLY_FIXES_MODE: commit
-
-            - name: Import GPG key
-              uses: crazy-max/ghaction-import-gpg@v6
-              with:
-                  git_user_signingkey: true
-                  git_commit_gpgsign: true
-                  gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
-                  passphrase: ${{ secrets.PASSPHRASE }}
-                  trust_level: 5
-
-            - name: Prepare commit
-              if: steps.megalinter.outputs.has_updated_sources == 1
-              run: sudo chown -Rc $UID .git/
-
-            - name: Sign commit and push changes
-              if: steps.megalinter.outputs.has_updated_sources == 1
-              run: |
-                  git add .
-                  git commit -S -m "[MegaLinter] Apply linters fixes"
-                  git push
