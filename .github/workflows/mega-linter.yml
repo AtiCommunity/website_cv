@@ -38,8 +38,7 @@ jobs:
               contains(fromJSON('["refs/heads/main"]'), github.ref)
             }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          FILEIO_REPORTER: false
-
+          REPORTERS: console
       - name: Prepare commit
         run: sudo chown -Rc $UID .git/
 
