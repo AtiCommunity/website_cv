@@ -39,6 +39,7 @@ jobs:
             }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           REPORTERS: console
+
       - name: Prepare commit
         run: sudo chown -Rc $UID .git/
 
