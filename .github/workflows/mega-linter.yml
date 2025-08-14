@@ -35,9 +35,8 @@ jobs:
             - name: Checkout Code
               uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
               with:
-                  token: ${{ secrets.PAT || secrets.GITHUB_TOKEN }}
+                  token: ${{ secrets.GITHUB_TOKEN }}
                   fetch-depth: 0 # If you use VALIDATE_ALL_CODEBASE = true, you can remove this line to improve performances
-                  persist-credentials: true
 
             # MegaLinter
             - name: MegaLinter
@@ -69,7 +68,7 @@ jobs:
               if: steps.ml.outputs.has_updated_sources == 1 && (env.APPLY_FIXES_EVENT == 'all' || env.APPLY_FIXES_EVENT == github.event_name) && env.APPLY_FIXES_MODE == 'pull_request' && (github.event_name == 'push' || github.event.pull_request.head.repo.full_name == github.repository) && !contains(github.event.head_commit.message, 'skip fix')
               uses: peter-evans/create-pull-request@271a8d0340265f705b14b6d32b9829c1cb33d45e
               with:
-                  token: ${{ secrets.PAT || secrets.GITHUB_TOKEN }}
+                  token: ${{ secrets.GITHUB_TOKEN }}
                   commit-message: "[MegaLinter] Apply linters automatic fixes"
                   title: "[MegaLinter] Apply linters automatic fixes"
                   labels: bot
@@ -92,5 +91,3 @@ jobs:
                   commit_message: "[MegaLinter] Apply linters fixes"
                   commit_user_name: megalinter-bot
                   commit_user_email: 129584137+megalinter-bot@users.noreply.github.com
-              env:
-                  GIT_AUTH_TOKEN: ${{ secrets.PAT }}
