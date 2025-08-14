@@ -1,5 +1,5 @@
 ---
-name: MegaLinter
+name: CodeBaseCheck
 
 on:
   push:
