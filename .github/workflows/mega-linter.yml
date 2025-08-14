@@ -8,6 +8,7 @@ env:
   APPLY_FIXES: all
   APPLY_FIXES_EVENT: pull_request
   APPLY_FIXES_MODE: commit
+  REPORTERS: console
 
 concurrency:
   group: ${{ github.ref }}-${{ github.workflow }}
@@ -38,7 +39,6 @@ jobs:
               contains(fromJSON('["refs/heads/main"]'), github.ref)
             }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          REPORTERS: console
 
       - name: Prepare commit
         run: sudo chown -Rc $UID .git/
