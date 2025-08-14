@@ -1,5 +1,5 @@
 ---
-name: CodeBaseCheck
+name: Code base check
 
 on:
   push:
