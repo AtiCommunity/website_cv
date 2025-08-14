@@ -1,5 +1,5 @@
 ---
-name: Code base check
+name: Linters
 
 on:
   push:
