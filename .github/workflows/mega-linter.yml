@@ -155,13 +155,13 @@ jobs:
       - name: MegaLinter
 
         # You can override MegaLinter flavor used to have faster performances
-        # More info at https://megalinter.io/flavors/
+        # More info at https://megalinter.io/latest/flavors/
         uses: oxsecurity/megalinter@e08c2b05e3dbc40af4c23f41172ef1e068a7d651
 
         id: ml
 
         # All available variables are described in documentation
-        # https://megalinter.io/configuration/
+        # https://megalinter.io/latest/configuration/
         env:
           # Validates all source when push on main, else just the git diff with
           # main. Override with true if you always want to lint all sources
