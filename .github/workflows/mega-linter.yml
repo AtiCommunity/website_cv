@@ -91,7 +91,5 @@ jobs:
                   commit_message: "[MegaLinter] Apply linters fixes"
                   commit_user_name: megalinter-bot
                   commit_user_email: 129584137+megalinter-bot@users.noreply.github.com
-                  # cspell:ignore Atineon
-                  commit_author: Atineon <41876775+Atineon@users.noreply.github.com>
               env:
                   GIT_AUTH_TOKEN: ${{ secrets.PAT }}
