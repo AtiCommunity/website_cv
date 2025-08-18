@@ -1,0 +1,8 @@
+COPYPASTE_JSCPD_ARGUMENTS: --threshold 5
+
+EXCLUDED_FILES:
+    - ".git/"
+    - ".github/"
+    - "node_modules/"
+    - "tsconfig.node.json"
+    - "tsconfig.node.json"
