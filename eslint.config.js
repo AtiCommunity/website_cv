@@ -24,14 +24,5 @@ export default tseslint.config(
                 { allowConstantExport: true },
             ],
         },
-    },
-    {
-        rules: {
-            "@typescript-eslint/array-type": "error",
-            "@typescript-eslint/no-explicit-any": [
-                "warn",
-                { ignoreRestArgs: true },
-            ],
-        },
     }
 );
