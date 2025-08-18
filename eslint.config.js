@@ -23,6 +23,10 @@ export default tseslint.config(
                 "warn",
                 { allowConstantExport: true },
             ],
+        },
+    },
+    {
+        rules: {
             "@typescript-eslint/array-type": "error",
             "@typescript-eslint/no-explicit-any": [
                 "warn",
