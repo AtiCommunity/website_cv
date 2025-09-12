@@ -5,6 +5,8 @@ import {
     FaPhone,
     FaSquareGithub,
 } from "react-icons/fa6";
+import { GiFrance } from "react-icons/gi";
+import { IoCarSportSharp } from "react-icons/io5";
 
 const PersonalInformation = () => {
     return (
@@ -23,8 +25,16 @@ const PersonalInformation = () => {
                         <p>+33641042294</p>
                     </div>
                     <div className="flex gap-5 justify-between items-center">
-                        <FaIdCard />
+                        <GiFrance />
                         <p>French nationality</p>
+                    </div>
+                    <div className="flex gap-5 justify-between items-center">
+                        <FaIdCard />
+                        <p>European Driving licence (B)</p>
+                    </div>
+                    <div className="flex gap-5 justify-between items-center">
+                        <IoCarSportSharp />
+                        <p>Got my own personal car</p>
                     </div>
                 </div>
                 <div className="flex w-full justify-around">

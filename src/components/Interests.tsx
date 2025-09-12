@@ -5,7 +5,7 @@ import Sports from "./Interests/sports";
 const Interests = () => {
     return (
         <>
-            <div className="container flex flex-col lg:flex-row lg:justify-around items-center p-5 max-w-7xl bg-black/40 border-0 rounded-box">
+            <div className="container flex flex-col xl:flex-row xl:justify-around items-center p-5 max-w-7xl bg-black/40 border-0 rounded-box">
                 <Projects />
                 <PointOfInterest />
                 <Sports />
