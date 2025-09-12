@@ -1,4 +1,3 @@
-EXCLUDED_DIRECTORIES: [.github/workflows]
 REPORT_OUTPUT_FOLDER: none
 SHOW_ELAPSED_TIME: true
 

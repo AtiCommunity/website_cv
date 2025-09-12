@@ -38,8 +38,11 @@ jobs:
                         contains(fromJSON('["refs/heads/main"]'), github.ref)
                       }}
 
-            - name: Prepare commit
-              run: sudo chown -Rc $UID .git/
+            - name: Prepare commit and revert any changes to workflow files
+              run: |
+                  sudo chown -Rc $UID .git/
+                  git checkout -- .github/workflows || true
+                  git restore --staged .github/workflows || true
 
             - name: Commit and push applied linter fixes
               # cspell:ignore stefanzweifel
