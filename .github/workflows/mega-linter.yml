@@ -28,7 +28,7 @@ jobs:
             - name: Checkout Code
               uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
               with:
-                  token: ${{ secrets.GITHUB_TOKEN }}
+                  token: ${{ secrets.MEGALINTER_TOKEN }}
                   fetch-depth: 0
 
             - name: MegaLinter
@@ -40,7 +40,7 @@ jobs:
                         github.event_name == 'push' &&
                         contains(fromJSON('["refs/heads/main"]'), github.ref)
                       }}
-                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                  GITHUB_TOKEN: ${{ secrets.MEGALINTER_TOKEN }}
 
             - name: Prepare commit
               run: sudo chown -Rc $UID .git/
@@ -49,12 +49,6 @@ jobs:
               # cspell:ignore stefanzweifel
               uses: stefanzweifel/git-auto-commit-action@778341af668090896ca464160c2def5d1d1a3eb0
               with:
-                  token: ${{ secrets.MEGALINTER_TOKEN }}
-                  branch: >-
-                      ${{
-                        github.head_ref ||
-                        github.ref
-                      }}
                   commit_message: "fix(mega-linter): apply linters fixes"
                   commit_user_name: megalinter-bot
                   commit_user_email: nicolas.vuillamy@ox.security
