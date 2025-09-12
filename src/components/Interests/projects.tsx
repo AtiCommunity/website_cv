@@ -1,3 +1,5 @@
+import { t } from "i18next";
+
 import { FaArrowLeft, FaArrowRight, FaFaceSmileWink } from "react-icons/fa6";
 
 const Projects = () => {
@@ -6,11 +8,11 @@ const Projects = () => {
             <div className="flex flex-col gap-10 p-5">
                 <div className="flex items-center justify-center gap-2">
                     <FaFaceSmileWink size={25} />
-                    <h1 className="title">Funny personal projects</h1>
+                    <h1 className="title">{t("projects_title")}</h1>
                 </div>
                 <div className="flex flex-col text-center gap-6">
                     <div className="flex flex-col">
-                        <p className="text-yellow-500">Project showcase</p>
+                        <p className="text-yellow-500">{t("projects_1_title")}</p>
                         <div className="flex items-center justify-center gap-2">
                             <a
                                 href="https://github.com/AtiCommunity"
@@ -18,7 +20,7 @@ const Projects = () => {
                             >
                                 <div className="flex items-center justify-center gap-2">
                                     <FaArrowRight />
-                                    <p>GitHub</p>
+                                    <p>{t("projects_1_link")}</p>
                                     <FaArrowLeft />
                                 </div>
                             </a>

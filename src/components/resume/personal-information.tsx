@@ -1,3 +1,5 @@
+import { t } from "i18next";
+
 import {
     FaEnvelope,
     FaLinkedin,
@@ -12,29 +14,29 @@ const PersonalInformation = () => {
     return (
         <>
             <div className="flex flex-col gap-10 p-5">
-                <h1 className="title">Personal information</h1>
+                <h1 className="title">{t("personal_information_title")}</h1>
                 <div className="flex flex-col gap-2">
                     <div className="flex gap-5 justify-between items-center">
                         <FaEnvelope />
-                        <a href="mailto:antoine.robin@aticommunity.fr">
+                        <a href="mailto:antoine.robin@aticommunity.fr" className="w-max">
                             antoine.robin@aticommunity.fr
                         </a>
                     </div>
                     <div className="flex gap-5 justify-between items-center">
                         <FaPhone />
-                        <p>+33641042294</p>
+                        <p className="w-max">+33641042294</p>
                     </div>
                     <div className="flex gap-5 justify-between items-center">
                         <GiFrance />
-                        <p>French nationality</p>
+                        <p className="w-max">{t("personal_information_nationality")}</p>
                     </div>
                     <div className="flex gap-5 justify-between items-center">
                         <FaIdCard />
-                        <p>European Driving licence (B)</p>
+                        <p className="w-max">{t("personal_information_driving_licence")}</p>
                     </div>
                     <div className="flex gap-5 justify-between items-center">
                         <IoCarSportSharp />
-                        <p>Got my own personal car</p>
+                        <p className="w-max">{t("personal_information_car_owner")}</p>
                     </div>
                 </div>
                 <div className="flex w-full justify-around">
