@@ -1,3 +1,5 @@
+import { t } from "i18next";
+
 import { FaUserGraduate } from "react-icons/fa6";
 
 const Degrees = () => {
@@ -6,46 +8,46 @@ const Degrees = () => {
             <div className="flex flex-col gap-10 p-5">
                 <div className="flex items-center justify-center gap-2">
                     <FaUserGraduate size={25} />
-                    <h1 className="title">Degrees</h1>
+                    <h1 className="title">{t("degrees_title")}</h1>
                 </div>
                 <div className="flex flex-col text-center gap-6">
                     <div className="flex flex-col">
                         <p className="text-yellow-500">
-                            Master&apos;s Degree in IT Engineering
+                            {t("degrees_1_title")}
                         </p>
                         <p className="text-sm italic">
-                            From October 2022 to October 2025
+                            {t("degrees_1_date")}
                         </p>
                         <p className="text-sm italic">
-                            In CESI École d&apos;ingénieurs, 76800 -
-                            Saint-Étienne du Rouvray, France
+                            {t("degrees_1_location")}
                         </p>
                     </div>
                     <div className="flex flex-col">
                         <p className="text-green-500">
-                            Associate Degree SN IR*
+                            {t("degrees_2_title")}
                         </p>
                         <p className="text-sm italic">
-                            From September 2020 to Jully 2022
+                            {t("degrees_2_date")}
                         </p>
                         <p className="text-sm italic">
-                            In Lycée La Morandière, 50400 - Granville, France
+                            {t("degrees_2_location")}
                         </p>
                         <p className="text-xs italic">
-                            *(Numerical Systems, IT and Networks)
+                            {t("degrees_2_description")}
                         </p>
                     </div>
                     <div className="flex flex-col">
-                        <p className="text-green-500">A-Level in STI2D*</p>
-                        <p className="text-sm italic">
-                            From September 2019 to Jully 2020
+                        <p className="text-green-500">
+                            {t("degrees_3_title")}
                         </p>
                         <p className="text-sm italic">
-                            In Lycée La Morandière, 50400 - Granville, France
+                            {t("degrees_3_date")}
+                        </p>
+                        <p className="text-sm italic">
+                            {t("degrees_3_location")}
                         </p>
                         <p className="text-xs italic">
-                            *(Technological Sciences of Industry and Sustainable
-                            Development)
+                            {t("degrees_3_description")}
                         </p>
                     </div>
                 </div>
