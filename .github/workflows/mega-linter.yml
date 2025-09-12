@@ -5,8 +5,8 @@ on:
     push:
 
 concurrency:
-    group: ${{ github.ref }}-${{ github.workflow }}
     cancel-in-progress: true
+    group: ${{ github.ref }}-${{ github.workflow }}
 
 jobs:
     megalinter:
@@ -21,8 +21,8 @@ jobs:
             - name: Checkout Code
               uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
               with:
-                  token: ${{ secrets.GITHUB_TOKEN }}
                   fetch-depth: 0
+                  token: ${{ secrets.GITHUB_TOKEN }}
 
             - name: MegaLinter
               uses: oxsecurity/megalinter@e08c2b05e3dbc40af4c23f41172ef1e068a7d651
@@ -32,8 +32,6 @@ jobs:
                   APPLY_FIXES_EVENT: pull_request
                   APPLY_FIXES_MODE: commit
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-                  REPORT_OUTPUT_FOLDER: none
-                  SHOW_ELAPSED_TIME: true
                   VALIDATE_ALL_CODEBASE: >-
                       ${{
                         github.event_name == 'push' &&
@@ -50,9 +48,6 @@ jobs:
                   commit_message: "fix(mega-linter): apply linters fixes"
                   commit_user_name: megalinter-bot
                   commit_user_email: nicolas.vuillamy@ox.security
-                  file_pattern: |
-                      .
-                      :!/.github/workflows/**
 
             - name: Generate release artefact
               uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
