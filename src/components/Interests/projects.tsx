@@ -12,15 +12,30 @@ const Projects = () => {
                 </div>
                 <div className="flex flex-col text-center gap-6">
                     <div className="flex flex-col">
-                        <p className="text-yellow-500">{t("projects_1_title")}</p>
+                        <p className="text-yellow-500">
+                            {t("projects_1_title")}
+                        </p>
                         <div className="flex items-center justify-center gap-2">
-                            <a
-                                href="https://github.com/AtiCommunity"
-                                target="_blank"
-                            >
+                            <a href={t("projects_1_link")} target="_blank">
                                 <div className="flex items-center justify-center gap-2">
                                     <FaArrowRight />
-                                    <p>{t("projects_1_link")}</p>
+                                    <p>{t("projects_link_button")}</p>
+                                    <FaArrowLeft />
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div className="flex flex-col text-center gap-6">
+                    <div className="flex flex-col">
+                        <p className="text-yellow-500">
+                            {t("projects_2_title")}
+                        </p>
+                        <div className="flex items-center justify-center gap-2">
+                            <a href={t("projects_2_link")} target="_blank">
+                                <div className="flex items-center justify-center gap-2">
+                                    <FaArrowRight />
+                                    <p>{t("projects_link_button")}</p>
                                     <FaArrowLeft />
                                 </div>
                             </a>
