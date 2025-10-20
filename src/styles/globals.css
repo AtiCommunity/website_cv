@@ -1,56 +1,60 @@
-@import url('https://fonts.googleapis.com/css2?family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 
 @import "tailwindcss";
 @plugin "daisyui";
 
 @plugin "daisyui/theme" {
-    name: "synthwave";
-    default: true;
-    prefersdark: true;
-    color-scheme: "dark";
-    --color-base-100: oklch(15% 0.09 281.288);
-    --color-base-200: oklch(20% 0.09 281.288);
-    --color-base-300: oklch(25% 0.09 281.288);
-    /* --color-base-content: oklch(78% 0.115 274.713); */
-    --color-base-content: oklch(1 0 0);
-    --color-primary: oklch(71% 0.202 349.761);
-    --color-primary-content: oklch(28% 0.109 3.907);
-    --color-secondary: oklch(82% 0.111 230.318);
-    --color-secondary-content: oklch(29% 0.066 243.157);
-    --color-accent: oklch(75% 0.183 55.934);
-    --color-accent-content: oklch(26% 0.079 36.259);
-    --color-neutral: oklch(45% 0.24 277.023);
-    --color-neutral-content: oklch(87% 0.065 274.039);
-    --color-info: oklch(74% 0.16 232.661);
-    --color-info-content: oklch(29% 0.066 243.157);
-    --color-success: oklch(77% 0.152 181.912);
-    --color-success-content: oklch(27% 0.046 192.524);
-    --color-warning: oklch(90% 0.182 98.111);
-    --color-warning-content: oklch(42% 0.095 57.708);
-    --color-error: oklch(73.7% 0.121 32.639);
-    --color-error-content: oklch(23.501% 0.096 290.329);
-    --radius-selector: 1rem;
-    --radius-field: 0.5rem;
-    --radius-box: 1rem;
-    --size-selector: 0.25rem;
-    --size-field: 0.25rem;
-    --border: 1px;
-    --depth: 0;
-    --noise: 0;
+  name: "synthwave";
+  default: true;
+  prefersdark: true;
+  color-scheme: "dark";
+  --color-base-100: oklch(15% 0.09 281.288);
+  --color-base-200: oklch(20% 0.09 281.288);
+  --color-base-300: oklch(25% 0.09 281.288);
+  /* --color-base-content: oklch(78% 0.115 274.713); */
+  --color-base-content: oklch(1 0 0);
+  --color-primary: oklch(71% 0.202 349.761);
+  --color-primary-content: oklch(28% 0.109 3.907);
+  --color-secondary: oklch(82% 0.111 230.318);
+  --color-secondary-content: oklch(29% 0.066 243.157);
+  --color-accent: oklch(75% 0.183 55.934);
+  --color-accent-content: oklch(26% 0.079 36.259);
+  --color-neutral: oklch(45% 0.24 277.023);
+  --color-neutral-content: oklch(87% 0.065 274.039);
+  --color-info: oklch(74% 0.16 232.661);
+  --color-info-content: oklch(29% 0.066 243.157);
+  --color-success: oklch(77% 0.152 181.912);
+  --color-success-content: oklch(27% 0.046 192.524);
+  --color-warning: oklch(90% 0.182 98.111);
+  --color-warning-content: oklch(42% 0.095 57.708);
+  --color-error: oklch(73.7% 0.121 32.639);
+  --color-error-content: oklch(23.501% 0.096 290.329);
+  --radius-selector: 1rem;
+  --radius-field: 0.5rem;
+  --radius-box: 1rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 0;
+  --noise: 0;
 }
 
 html {
-    font-family: 'KoHo', sans-serif;
-    font-size: 20px;
-    line-height: 28px;
-    text-align: justify;
+  font-family: "KoHo", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: justify;
 }
 
 .title {
-    text-align: center;
-    text-transform: uppercase;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 a:hover {
-    color: #eab308;
+  color: #eab308;
+}
+
+li {
+  list-style-type: disc;
 }
