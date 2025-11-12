@@ -7,18 +7,20 @@ import Formations from "./components/formations.tsx";
 import Experiences from "./components/experiences.tsx";
 import Interests from "./components/Interests.tsx";
 
-
 function App() {
   const { i18n } = useTranslation();
 
   const setLanguage = (lang: string) => {
-    i18n.changeLanguage(lang)
+    i18n.changeLanguage(lang);
   };
 
   return (
     <>
-      <LanguageManager lang={i18n.language.toUpperCase()} setLanguage={setLanguage} />
-      <div className="container items-center mx-auto p-5 flex flex-col gap-5">
+      <LanguageManager
+        lang={i18n.language.toUpperCase()}
+        setLanguage={setLanguage}
+      />
+      <div className="container items-center mx-auto p-5 flex flex-col gap-5 text-sm sm:text-base">
         <Resume />
         <Skills />
         <Formations />
@@ -26,7 +28,7 @@ function App() {
         <Interests />
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
