@@ -1,6 +1,6 @@
 {
   "about_me_title": "About me",
-  "about_me_resume": "With 3 years of experience in the IT field, specifically in WEB development and software, I am currently looking for a job. Aiming to become a DevSecOps Engineer, I am passionate about development and CI/CD",
+  "about_me_resume": "With 3 years of experience in the IT field, specifically in WEB development and software, I am currently looking for a job. Aiming to become a DevSecOps Engineer, I am passionate about the development of micro-services infrastructures andw CI/CD",
   "personal_information_title": "Personal information",
   "personal_information_nationality": "French nationality",
   "personal_information_driving_licence": "European Driving licence (B)",
@@ -13,9 +13,10 @@
   "qualities_5": "Picky",
   "softskills_title": "Softskills",
   "softskills_1": "WEB (React, ViteJS, NextJS)",
-  "softskills_2": "Database (Relational and NoSQL)",
-  "softskills_3": "Software (Dart, Flutter, C#)",
+  "softskills_2": "Software (Dart, Flutter, C#)",
+  "softskills_3": "Database (Relational and NoSQL)",
   "softskills_4": "Operation (Docker, CI/CD)",
+  "softskills_5": "Management (Agile Method)",
   "languages_title": "Languages",
   "languages_1": "French - Native",
   "languages_2": "English - B2",
@@ -64,11 +65,10 @@
   "projects_2_title": "GitHub organization",
   "projects_2_link": "https://github.com/AtiCommunity",
   "point_of_interest_title": "Point of interest",
-  "point_of_interest_1_title": "Video games",
-  "point_of_interest_1_description": "I spent most of my time on video games. I find some freedom on it.",
-  "sports_title": "Sports",
-  "sports_1_title": "Karting",
-  "sports_1_description": "I love driving cars and karts. I like to share this with friends.",
-  "sports_2_title": "Bike",
-  "sports_2_description": "From time to time, I find pleasure in riding bikes with my father. Also, during my internship in Spain, I used bike a lot to move myself."
+  "point_of_interest_1_title": "Karting",
+  "point_of_interest_1_description": "I love driving cars and karts. I like sharing this with my friends.",
+  "point_of_interest_2_title": "Cycling",
+  "point_of_interest_2_description": "From time to time, I like to ride my bike with my father. Also, during my internship in Spain, I often used the bike to get around.",
+  "point_of_interest_3_title": "Video games",
+  "point_of_interest_3_description": "I really like competitive video games, such as FPS."
 }

@@ -1,6 +1,6 @@
 {
   "about_me_title": "À propos de moi",
-  "about_me_resume": "Disposant de 3 ans d'expérience dans le domaine de l'informatique, précisément dans le développement WEB et progiciel, je suis en recherche d'emploi. Ayant pour ambition de devenir Ingénieur DevSecOps, je suis passionné par le développement et la CI/CD",
+  "about_me_resume": "Disposant de 3 ans d'expérience dans le domaine de l'informatique, précisément dans le développement WEB et progiciel, je suis en recherche d'emploi. Ayant pour ambition de devenir Ingénieur DevSecOps, je suis passionné par le développement d'infrastructures micro-services et la CI/CD",
   "personal_information_title": "Informations personnelles",
   "personal_information_nationality": "Nationalité française",
   "personal_information_driving_licence": "Permis de conduire européen (B)",
@@ -13,9 +13,10 @@
   "qualities_5": "Pointilleux",
   "softskills_title": "Compétences",
   "softskills_1": "WEB (React, ViteJS, NextJS)",
-  "softskills_2": "Base de données (Relationnelle et NoSQL)",
-  "softskills_3": "Logiciel (Dart, Flutter, C#)",
+  "softskills_2": "Logiciel (Dart, Flutter, C#)",
+  "softskills_3": "Base de données (Relationnelle et NoSQL)",
   "softskills_4": "Opérations (Docker, CI/CD)",
+  "softskills_5": "Management (Méthode Agile)",
   "languages_title": "Langues",
   "languages_1": "Français - Langue maternelle",
   "languages_2": "Anglais - B2",
@@ -64,11 +65,10 @@
   "projects_2_title": "Organisation GitHub",
   "projects_2_link": "https://github.com/AtiCommunity",
   "point_of_interest_title": "Centre d'intérêt",
-  "point_of_interest_1_title": "Jeux vidéo",
-  "point_of_interest_1_description": "Je passe la majorité de mon temps sur les jeux vidéo. J'y trouve une certaine liberté.",
-  "sports_title": "Sports",
-  "sports_1_title": "Karting",
-  "sports_1_description": "J'adore conduire des voitures et des karts. J'aime partager cela avec mes amis.",
-  "sports_2_title": "Vélo",
-  "sports_2_description": "De temps en temps, j'aime faire du vélo avec mon père. Aussi, durant mon stage en Espagne, j'ai beaucoup utilisé le vélo pour me déplacer."
+  "point_of_interest_1_title": "Karting",
+  "point_of_interest_1_description": "J'adore conduire des voitures et des karts. J'aime partager cela avec mes amis.",
+  "point_of_interest_2_title": "Vélo",
+  "point_of_interest_2_description": "De temps en temps, j'aime faire du vélo avec mon père. Aussi, durant mon stage en Espagne, j'ai beaucoup utilisé le vélo pour me déplacer.",
+  "point_of_interest_3_title": "Jeux vidéo",
+  "point_of_interest_3_description": "J'aime beaucoup les jeux vidéo de compétition, comme les FPS."
 }
